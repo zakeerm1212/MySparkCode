@@ -18,8 +18,12 @@ object CSV_Files {
       .option("inferSchema","true")
       .load("/home/cloudera/Desktop/ALL_OK/src/main/resources/Sales.csv")
 
+      #code is validated sucessuflly
+
     csvFile.write.format("csv")
       .option("mode","append")
       .save("/home/cloudera/Desktop/part_files_CSV")
+      
+      #code readdy to depoly into production.
   }
 }
